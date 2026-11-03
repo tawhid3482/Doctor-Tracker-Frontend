@@ -1,4 +1,4 @@
-const apiBase = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api/v1').replace(/\/+$/, '');
+const apiBase = (process.env.NEXT_PUBLIC_API_URL || '').replace(/\/+$/, '');
 const authRoutesWithoutRefresh = new Set(['/auth/login', '/auth/refresh', '/auth/logout']);
 let refreshRequest: Promise<boolean> | null = null;
 
