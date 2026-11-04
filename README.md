@@ -34,6 +34,16 @@ Doctor Tracker is a responsive clinic administration app for managing doctors an
 
 The backend must allow `http://localhost:3000` through its `CLIENT_ORIGIN` setting. Its setup instructions are in [Doctor Tracker Backend](../Doctor-Tracker-Backend/README.md).
 
+### Local test admin login
+
+Use these credentials to sign in at `http://localhost:3000/login` when testing with the local backend:
+
+| Email | Password |
+| --- | --- |
+| `admin@gmail.com` | `admin1234567` |
+
+The backend must be configured with the same `ADMIN_EMAIL` and `ADMIN_PASSWORD`, and its initial admin must be created before login. Admin bootstrap only creates an account when no admin already exists; it does not reset existing credentials. These are development/testing credentials only.
+
 ### Environment variables
 
 | Variable | Description |
