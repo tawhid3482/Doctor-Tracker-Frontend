@@ -25,7 +25,7 @@ export default function DoctorDetailPage({ params }: { params: Promise<{ id: str
   });
   const patients = useQuery({
     queryKey: ['doctor-patients', id, page],
-    queryFn: async () => api<Envelope<Patient[]>>(`/doctors/${id}/patients?page=${page}&limit=10`),
+    queryFn: async () => api<Envelope<Patient[]>>(`/doctors/${id}/patients?page=${page}&limit=5`),
   });
 
   useEffect(() => {
